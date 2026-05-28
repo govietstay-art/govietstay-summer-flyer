@@ -35,7 +35,7 @@ const tours = [
     oldPrice: "65 USD",
     price: "55 USD",
     image:
-      "/tour1.jpg",
+      "./tour1.jpg",
     tag: "Mountain Iconic",
     short:
       "Walk above the clouds on the iconic Golden Bridge and enjoy cool mountain weather, cable car views and French Village atmosphere.",
@@ -69,7 +69,7 @@ const tours = [
     oldPrice: "95 USD",
     price: "80 USD",
     image:
-      "/tour2.jpg",
+      "./tour2.jpg",
     tag: "Culture & Lanterns",
     short:
       "A magical evening with lantern streets, riverside beauty, night market and the famous Hoi An Memories Show.",
@@ -101,7 +101,7 @@ const tours = [
     oldPrice: "80 USD",
     price: "68 USD",
     image:
-      "/tour3.jpg",
+      "./tour3.jpg",
     tag: "Sunset Cruise",
     short:
       "Relax on the Han River with sunset views, romantic atmosphere and beautiful Da Nang night skyline.",
@@ -133,7 +133,7 @@ const tours = [
     oldPrice: "110 USD",
     price: "93 USD",
     image:
-      "/tour4.jpg",
+      "./tour4.jpg",
     tag: "Adventure & Nature",
     short:
       "A fun adventure with jeep ride, hidden nature spots, mountain views and SUP experience.",
@@ -165,7 +165,7 @@ const tours = [
     oldPrice: "65 USD",
     price: "55 USD",
     image:
-      "/tour5.jpg",
+      "./tour5.jpg",
     tag: "Scenic Mountains",
     short:
       "Escape to peaceful mountains, glass bridge views, waterfalls and unique local culture.",
@@ -197,7 +197,7 @@ const tours = [
     oldPrice: "49 USD",
     price: "42 USD",
     image:
-      "/tour6.jpg",
+      "./tour6.jpg",
     tag: "Island & Snorkeling",
     short:
       "Swim in crystal-clear water, enjoy coral reefs, speedboat ride and tropical island vibes.",
@@ -229,7 +229,7 @@ const tours = [
     oldPrice: "110 USD",
     price: "93 USD",
     image:
-      "/tour7.jpg",
+      "./tour7.jpg",
     tag: "History & Heritage",
     short:
       "Discover Vietnam’s royal history, Imperial City, ancient tombs and traditional architecture.",
@@ -261,7 +261,7 @@ const tours = [
     oldPrice: "60 USD",
     price: "51 USD",
     image:
-      "/tour8.jpg",
+      "./tour8.jpg",
     tag: "Local Life & Fun",
     short:
       "Enjoy basket boat fun, coconut forest atmosphere and the charming beauty of Hoi An.",
@@ -413,7 +413,7 @@ export default function GoVietStayDigitalFlyer() {
               🌴
             </div>
             <div>
-              <img src="/logo.jpg" className="w-28 mx-auto mb-4" />
+              <img src="./logo.jpg" className="w-28 mx-auto mb-4" />
               <h1 className="text-4xl font-black md:text-6xl">GoVietStay</h1>
               <p className="text-xs uppercase tracking-[0.35em] text-amber-100 md:text-sm">
                 Da Nang • Hoi An • Vietnam
