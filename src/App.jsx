@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GroupDeals from "./GroupDeals.jsx";
 import {
   MessageCircle,
   MapPin,
@@ -408,6 +409,7 @@ export default function App() {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#group-deals" className="rounded-full bg-amber-300 px-8 py-4 text-lg font-black text-emerald-950 shadow-xl transition hover:bg-amber-200">Find a Group Deal / Найти группу</a>
             <a
               href={WHATSAPP}
               className="rounded-full bg-green-500 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-green-400"
@@ -424,7 +426,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="px-4 py-10 md:px-8">
+      <GroupDeals />
+
+      <section id="tour-catalogue" className="px-4 py-10 md:px-8">
         <div className="mx-auto max-w-7xl text-center">
           <div className="mb-4 inline-block rounded-full bg-emerald-800 px-6 py-2 text-sm font-black text-white">
             Tap each experience to see full itinerary
