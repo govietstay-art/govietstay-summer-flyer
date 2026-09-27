@@ -461,7 +461,7 @@ export default function App() {
                   </div>
 
                   <div className="absolute right-4 top-4 rounded-full bg-rose-500 px-4 py-2 text-sm font-black text-white shadow">
-                    15% OFF
+                    Historical catalogue
                   </div>
 
                   <div className="absolute bottom-5 left-5 right-5 text-white">
@@ -477,12 +477,11 @@ export default function App() {
 
                 <div className="p-6">
                   <div className="flex items-end gap-3">
-                    <span className="text-lg text-slate-500 line-through">{tour.oldPrice}</span>
-                    <span className="text-4xl font-black text-emerald-700">{tour.price}</span>
+                    <span className="text-lg font-black text-emerald-700">Request current quote</span>
                   </div>
 
                   <div className="mt-5 rounded-2xl bg-amber-50 p-4 text-sm font-bold text-emerald-950">
-                    4+ Guests = FREE Private Tour Upgrade + 30-min Foot Massage
+                    Seasonal packages are quoted separately from Weekly Group Deals.
                   </div>
 
                   <div className="mt-6 flex items-center justify-between">
@@ -536,10 +535,9 @@ export default function App() {
 
             <div className="space-y-6 p-6 md:p-10">
               <div className="flex flex-wrap items-end gap-4">
-                <span className="text-2xl text-slate-500 line-through">{selected.oldPrice}</span>
-                <span className="text-6xl font-black text-emerald-700">{selected.price}</span>
+                <span className="text-3xl font-black text-emerald-700">Request current quote</span>
                 <span className="rounded-full bg-rose-100 px-4 py-2 font-black text-rose-700">
-                  Summer reference price
+                  Historical catalogue
                 </span>
               </div>
 
@@ -633,9 +631,9 @@ export default function App() {
               </DetailSection>
 
               <div className="rounded-3xl bg-green-50 p-6 text-lg font-black text-emerald-950">
-                EN: 4+ Guests = FREE Private Tour Upgrade + 30-minute Foot Massage at Night Market.
+                EN: Previous seasonal offers are not part of Weekly Group Deals. Ask for an updated quote.
                 <br />
-                RU: Для групп от 4 гостей: бесплатный Private Tour + 30 минут массажа ног на ночном рынке.
+                RU: Предыдущие сезонные акции не входят в Weekly Group Deals. Актуальную цену уточняйте перед бронированием.
               </div>
 
               <div className="rounded-3xl bg-slate-50 p-6 text-slate-700">
