@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GroupDeals from "./GroupDeals.jsx";
+import MonthlyPilot from "./MonthlyPilot.jsx";
 import {
   MessageCircle,
   MapPin,
@@ -380,17 +380,16 @@ export default function App() {
           </p>
 
           <p className="mt-8 font-serif text-5xl italic text-amber-200 md:text-7xl">
-            Summer Special
+            Weekly Group Deals
           </p>
-          <h2 className="mt-2 text-7xl font-black md:text-9xl">2026</h2>
+          <h2 className="mt-2 text-5xl font-black md:text-7xl">4-Week Pilot</h2>
 
           <p className="mx-auto mt-6 max-w-5xl text-3xl font-black md:text-5xl">
-            9 Signature Experiences • Up to <span className="text-amber-300">15% OFF</span>
+            3 Weekly Experiences • <span className="text-amber-300">EN & RU Guide Groups</span>
           </p>
 
           <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-white/90 md:text-xl">
-            EN/RU digital travel flyer for beach travelers: cinematic images, clear tour details,
-            Google Maps trust, and instant WhatsApp booking.
+            Join a small group of up to 10 travellers. Choose a Russian- or English-speaking guide, request your preferred date, and receive a confirmed price before paying.
           </p>
 
           <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-3">
@@ -409,7 +408,7 @@ export default function App() {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="#group-deals" className="rounded-full bg-amber-300 px-8 py-4 text-lg font-black text-emerald-950 shadow-xl transition hover:bg-amber-200">Find a Group Deal / Найти группу</a>
+            <a href="#group-deals" className="rounded-full bg-amber-300 px-8 py-4 text-lg font-black text-emerald-950 shadow-xl transition hover:bg-amber-200">Выбрать экскурсию / Find your group</a>
             <a
               href={WHATSAPP}
               className="rounded-full bg-green-500 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-green-400"
@@ -426,7 +425,7 @@ export default function App() {
         </div>
       </section>
 
-      <GroupDeals />
+      <MonthlyPilot />
 
       <section id="tour-catalogue" className="px-4 py-10 md:px-8">
         <div className="mx-auto max-w-7xl text-center">
@@ -435,11 +434,11 @@ export default function App() {
           </div>
 
           <h2 className="text-4xl font-black text-emerald-950 md:text-6xl">
-            9 Experiences — Unlimited Memories
+            More Experiences from GoVietStay
           </h2>
 
           <p className="mt-3 text-slate-600">
-            EN/RU overview, detailed program, inclusions, tips, summer reference price and instant WhatsApp booking.
+            Our existing tour catalogue. Prices and seasonal offers are subject to reconfirmation.
           </p>
 
           <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
