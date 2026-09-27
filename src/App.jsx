@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MonthlyPilot from "./MonthlyPilot.jsx";
 import {
   MessageCircle,
   MapPin,
@@ -379,17 +380,16 @@ export default function App() {
           </p>
 
           <p className="mt-8 font-serif text-5xl italic text-amber-200 md:text-7xl">
-            Summer Special
+            Weekly Group Deals
           </p>
-          <h2 className="mt-2 text-7xl font-black md:text-9xl">2026</h2>
+          <h2 className="mt-2 text-5xl font-black md:text-7xl">4-Week Pilot</h2>
 
           <p className="mx-auto mt-6 max-w-5xl text-3xl font-black md:text-5xl">
-            9 Signature Experiences • Up to <span className="text-amber-300">15% OFF</span>
+            3 Weekly Experiences • <span className="text-amber-300">EN & RU Guide Groups</span>
           </p>
 
           <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-white/90 md:text-xl">
-            EN/RU digital travel flyer for beach travelers: cinematic images, clear tour details,
-            Google Maps trust, and instant WhatsApp booking.
+            Join a small group of up to 10 travellers. Choose a Russian- or English-speaking guide, request your preferred date, and receive a confirmed price before paying.
           </p>
 
           <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-3">
@@ -408,6 +408,7 @@ export default function App() {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#group-deals" className="rounded-full bg-amber-300 px-8 py-4 text-lg font-black text-emerald-950 shadow-xl transition hover:bg-amber-200">Выбрать экскурсию / Find your group</a>
             <a
               href={WHATSAPP}
               className="rounded-full bg-green-500 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-green-400"
@@ -424,18 +425,20 @@ export default function App() {
         </div>
       </section>
 
-      <section className="px-4 py-10 md:px-8">
+      <MonthlyPilot />
+
+      <section id="tour-catalogue" className="px-4 py-10 md:px-8">
         <div className="mx-auto max-w-7xl text-center">
           <div className="mb-4 inline-block rounded-full bg-emerald-800 px-6 py-2 text-sm font-black text-white">
             Tap each experience to see full itinerary
           </div>
 
           <h2 className="text-4xl font-black text-emerald-950 md:text-6xl">
-            9 Experiences — Unlimited Memories
+            More Experiences from GoVietStay
           </h2>
 
           <p className="mt-3 text-slate-600">
-            EN/RU overview, detailed program, inclusions, tips, summer reference price and instant WhatsApp booking.
+            Our existing tour catalogue. Prices and seasonal offers are subject to reconfirmation.
           </p>
 
           <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -458,7 +461,7 @@ export default function App() {
                   </div>
 
                   <div className="absolute right-4 top-4 rounded-full bg-rose-500 px-4 py-2 text-sm font-black text-white shadow">
-                    15% OFF
+                    Historical catalogue
                   </div>
 
                   <div className="absolute bottom-5 left-5 right-5 text-white">
@@ -474,12 +477,11 @@ export default function App() {
 
                 <div className="p-6">
                   <div className="flex items-end gap-3">
-                    <span className="text-lg text-slate-500 line-through">{tour.oldPrice}</span>
-                    <span className="text-4xl font-black text-emerald-700">{tour.price}</span>
+                    <span className="text-lg font-black text-emerald-700">Request current quote</span>
                   </div>
 
                   <div className="mt-5 rounded-2xl bg-amber-50 p-4 text-sm font-bold text-emerald-950">
-                    4+ Guests = FREE Private Tour Upgrade + 30-min Foot Massage
+                    Seasonal packages are quoted separately from Weekly Group Deals.
                   </div>
 
                   <div className="mt-6 flex items-center justify-between">
@@ -533,10 +535,9 @@ export default function App() {
 
             <div className="space-y-6 p-6 md:p-10">
               <div className="flex flex-wrap items-end gap-4">
-                <span className="text-2xl text-slate-500 line-through">{selected.oldPrice}</span>
-                <span className="text-6xl font-black text-emerald-700">{selected.price}</span>
+                <span className="text-3xl font-black text-emerald-700">Request current quote</span>
                 <span className="rounded-full bg-rose-100 px-4 py-2 font-black text-rose-700">
-                  Summer reference price
+                  Historical catalogue
                 </span>
               </div>
 
@@ -630,9 +631,9 @@ export default function App() {
               </DetailSection>
 
               <div className="rounded-3xl bg-green-50 p-6 text-lg font-black text-emerald-950">
-                EN: 4+ Guests = FREE Private Tour Upgrade + 30-minute Foot Massage at Night Market.
+                EN: Previous seasonal offers are not part of Weekly Group Deals. Ask for an updated quote.
                 <br />
-                RU: Для групп от 4 гостей: бесплатный Private Tour + 30 минут массажа ног на ночном рынке.
+                RU: Предыдущие сезонные акции не входят в Weekly Group Deals. Актуальную цену уточняйте перед бронированием.
               </div>
 
               <div className="rounded-3xl bg-slate-50 p-6 text-slate-700">
